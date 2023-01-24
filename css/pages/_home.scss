@@ -1,0 +1,20 @@
+.wrapper{
+    width: 1300px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;;
+}
+h6{
+    background: red;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    width: 100px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    .imgslideshowheader{
+        background: url(../../img/blog-img/13.jpg);
+    }
+}
