@@ -1,0 +1,9 @@
+.thirdblock{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+    margin-bottom: 40px;
+    img{
+        width: 100%;}
+}

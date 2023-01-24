@@ -1,10 +1,143 @@
 .firstblock{
     width: 100%;
     display: grid;
-    gap: 1.5rem;
-    grid-template-columns: 5fr 1.5fr;
+    gap: 2rem;
+    grid-template-columns: 4fr 1fr;
+    color:rgba(0, 0, 0, 0.75);
+    margin-bottom: 60px;
     img{
         width: 100%;
+        
     }
     
+    .newswrapper{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 2em;
+    }
+  
+    .todaysmost p{
+        text-transform: uppercase;
+        @include font;
+     }
+    
+    .news{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+         gap: 1em;
+        .imgnewstodays1{
+            background: url(../../img/blog-img/2.jpg)no-repeat center/cover;
+
+        }
+        .imgnewstodays2{
+            background: url(../../img/blog-img/18.jpg)no-repeat center/cover;
+        }
+        .textnewstodays span{
+            line-height: 40px;
+        
+        }
+    
+    }
+    .politicstext{
+        padding: 60px;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 18px;
+        line-height: 40px;
+        text-align: justify;
+        color: rgb(160, 152, 152);
+    }
+}
+.btnwhite{
+    background: white;
+    padding: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    color: black;
+    width: 230px;
+   
+}
+.btnwhite  i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: black;
+}
+ 
+.americanflag{
+    position: relative;
+    img{
+        display: block;
+    }
+}
+.americanflag::before{
+    content: '';
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(236, 201, 3, 0.178);
+}
+
+
+.right{
+    h4{
+        @include textcolor;
+        line-height: 60px;
+        border-bottom: 1px solid rgb(204, 197, 197);
+        
+    }
+    .square{
+        position: relative;
+        p{
+            position: absolute;
+            bottom: 0;
+            color: white;
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 19px;
+            font-weight: 500;
+        }
+    }
+    .square::before{
+        content: '';
+        position: absolute; 
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.219);
+    }
+
+    .square1{
+        background: url(../../img/blog-img/bn-1.jpg)no-repeat center/cover;
+        height:250px;
+        margin-bottom: 2em;
+        
+    }
+    .square2{
+        background: url(../../img/blog-img/bn-2.jpg)no-repeat center/cover;
+        height:250px;
+
+    }
+    .greyrectangle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.199);
+        height: 33px;
+        .redrectangle{
+            width: 50%;
+            background: red;
+            color: white;
+            font-size: 13px;
+            text-align: center;
+            height: 100%;
+            line-height: 33px;
+            padding: 1px;
+        }
+    }
 }
