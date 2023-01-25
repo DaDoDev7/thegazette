@@ -4,9 +4,9 @@
   <head>
   <meta charset="UTF-8">
   <title>The Gazette</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.min.css">
-  <link rel="stylesheet" href="https://kit.fontawesome.com/d2daa20862.css" crossorigin="anonymous">
   </head>
   <header>
     <div class="logo">
@@ -23,22 +23,36 @@
       <a href="">darios</a>
     </div>
   </header>
-  <section class="slideshow">
-    <div class="imgslideshowheader slide1">
+  <section class="slideshow swiper">
+    <div class="imgslideshowheader slide1 swiper-slide">
       <div class="textimgslider">
         <h6>crypto</h6>
         <h1>A fancy Building</h1>
         <cite>june 21, 1987</cite>
       </div>
     </div> 
-    <div class="imgslideshowheader slide2">
+    <div class="imgslideshowheader slide2 swiper-slide">
       <div class="textimgslider">
         <h6>live</h6>
         <h1>Music in the Air</h1>
         <cite>june 21, 1987</cite>
       </div>
     </div>
-     <div class="imgslideshowheader slide3">
+     <div class="imgslideshowheader slide3 swiper-slide">
+      <div class="textimgslider">
+        <h6>beaches</h6>
+        <h1>Mohammed <br> advices</h1>
+        <cite>june 21, 1987</cite>
+      </div>
+    </div>
+    <div class="imgslideshowheader slide3 swiper-slide">
+      <div class="textimgslider">
+        <h6>beaches</h6>
+        <h1>Mohammed <br> advices</h1>
+        <cite>june 21, 1987</cite>
+      </div>
+    </div>
+    <div class="imgslideshowheader slide3 swiper-slide">
       <div class="textimgslider">
         <h6>beaches</h6>
         <h1>Mohammed <br> advices</h1>
@@ -62,23 +76,25 @@
             <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere. Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend.</span>
           </div>
       
-        <a href="">
-          <div class="btnwhite"> continue reading 
-            <i class="fa-regular fa-chevron-right"></i>
+        <div class="buttonsfirstblock">
+          <a href="">
+            <div class="btnwhite"> continue reading
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+          </a>
+          <div class="socials">
+            <a href="">
+              <i class="fa fa-pinterest" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i></a>
           </div>
-        </a>
-        <div class="sharebuttons">
-          <a href="">
-            <i class="fa fa-pinterest" aria-hidden="true"></i>
-          </a>
-          <a href="">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a href="">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-          </a>
-          <a href="">
-            <i class="fa fa-twitter" aria-hidden="true"></i></a>
         </div>
         </div>
         <div class="todaysmost">
@@ -135,26 +151,32 @@
         </div>
         <div class="dontmiss">
           <h4> don't miss</h4>
-          <div class="littlesquareright1">
+          <div class="littlesquareright">
             <img src="img/blog-img/11.jpg" alt="">
-            <span>EU council reunites</span>
-             <cite>june 21, 1987</cite>
+            <div class="textlittlesquare">
+              <span>EU council reunites</span>
+               <cite>june 21, 1987</cite>
+            </div>
           </div>
-          <div class="littlesquareright2">
+          <div class="littlesquareright">
             <img src="img/blog-img/8.jpg" alt="">
-            <span>A new way to travel with Dario</span>
-             <cite>june 21, 1987</cite>
+            <div class="textlittlesquare">
+              <span>A new way to travel with Dario</span>
+               <cite>june 21, 1987</cite>
+            </div>
           </div>
-          <div class="littlesquareright3">
+          <div class="littlesquareright">
             <img src="img/blog-img/24.jpg" alt="">
-            <span>Why choose a bank?</span>
-             <cite>june 21, 1987</cite>
+            <div class="textlittlesquare">
+              <span>Why choose a bank?</span>
+               <cite>june 21, 1987</cite>
+            </div>
           </div>
         </div>
         <div class="advert">
           <h4>advert</h4>
           <div class="youraddhere">
-            <img src="img/blog-img/12.jpg" alt="">
+            <img src="img/bg-img/add.png" alt="">
           </div>
           <h4>subscribe</h4>
           <form action="">
@@ -169,9 +191,8 @@
     </div>
     <div class="secondblock">
       <column class="video">
-        <h6>video</h6>
         <img src="img/blog-img/12.jpg" alt="">
-        
+        <h6>video</h6>
         <div class="textsecondblock">
           <h3>Save the eniroment with this step</h3>
           <cite>jun 21, 1987</cite>
@@ -190,37 +211,37 @@
         </div>
       </column>
       <column class="others">
-        <h6>others</h6>
         <div class="smallcolumn">
           <img src="img/blog-img/14.jpg" alt="">
+          <h6>others</h6>
           <h3>11 hottest toys for this holiday season</h3>
           <cite>jun 21, 1987</cite>
         </div>
         <div class="smallcolumn">
-          <h6>interview</h6>
           <img src="img/blog-img/16.jpg" alt="">
+          <h6>interview</h6>
           <h3>Get this good feeling about life</h3>
           <cite>jun 21, 1987</cite>
         </div>
       </column>
       <column class="video2">
         <div class="smallcolumn">
-          <h6>video</h6>
           <img src="img/blog-img/15.jpg" alt="">
+          <h6>video</h6>
           <h3>Get this good feeling about Dario</h3>
           <cite>jun 21, 1987</cite>
         </div>
         <div class="smallcolumn">
-          <h6>video</h6>
           <img src="img/blog-img/17.jpg" alt="">
-          <h3>11 hottest toys for this ass holiday season</h3>
+          <h6>video</h6>
+          <h3>11 hottest toys for this ass season</h3>
           <cite>jun 21, 1987</cite>
         </div>
        
       </column>
       <column class="video3">
-        <h6>video</h6>
         <img src="img/blog-img/12.jpg" alt="">
+        <h6>video</h6>
          <div class="textsecondblock">
           <h3>Save the eniroment with this step</h3>
           <cite>jun 21, 1987</cite>
@@ -291,8 +312,8 @@
       <img src="img/blog-img/bitcoin.jpg" alt="">
       <div class="textslideshowfooter">
         <h6>editorial</h6>
-        <h1>move over bitcoin . here it comes zohaib</h1>
-        <cite>june</cite>
+        <h1>Move over bitcoin . here it comes Zohaib</h1>
+        <cite>june 21, 1987</cite><br>
         <span>Lorem ipsum dolor, sit amet consectetur adipisicing.loremdario loremdario Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis excepturi ad quibusdam, culpa nulla inventore provident voluptatibus rerum corporis quo maxime nihil ipsam quia blanditiis dolore delectus aspernatur? Blanditiis saepe, porro modi autem, earum voluptatum nihil quasi sequi molestias esse magni deleniti ab veniam temporibus maiores. Doloremque recusandae rerum debitis!</span>
       </div>
     </div>
@@ -389,9 +410,14 @@
     <div class="copyright">
       <p>Copyright ©2023 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> style by DaDoDev7</p>
     </div>
-
-
   </footer>
-
+  <a id="top-button" href="">
+    <div >
+      <i class="fa-sharp fa-solid fa-chevron-up"></i>
+    </div>
+  </a>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/d2daa20862.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

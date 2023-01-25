@@ -47,6 +47,14 @@
         text-align: justify;
         color: rgb(160, 152, 152);
     }
+    
+}
+
+//buttons
+
+.buttonsfirstblock{
+    display: flex;
+    justify-content: space-between;
 }
 .btnwhite{
     background: white;
@@ -56,14 +64,29 @@
     border: 1px solid black;
     color: black;
     width: 230px;
-   
+    display: flex;
+    justify-content: space-between;
+    @include trans;
 }
-.btnwhite  i{
-    display: block;
-    width: 30px;
-    height: 30px;
-    color: black;
+.btnwhite:hover{
+    color: red;
+    border-color: red;
+
 }
+.socials{
+    display: flex;
+    align-items: center;
+}
+.socials a{
+    margin-left: 30px;
+    color: rgba(128, 128, 128, 0.596);
+    @include trans;
+}
+.socials a:hover{
+    color: red;
+}
+//end of buttons
+
  
 .americanflag{
     position: relative;
@@ -140,4 +163,11 @@
             padding: 1px;
         }
     }
+}
+
+//right column
+
+.littlesquareright{
+    display: grid;
+    grid-template-columns: 1fr;
 }
