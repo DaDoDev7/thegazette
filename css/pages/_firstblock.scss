@@ -5,6 +5,10 @@
     grid-template-columns: 4fr 1fr;
     color:rgba(0, 0, 0, 0.75);
     margin-bottom: 60px;
+    .politics{
+        margin-bottom: 80px;
+        
+    }
     img{
         width: 100%;
         
@@ -18,7 +22,12 @@
   
     .todaysmost p{
         text-transform: uppercase;
+        font-size: 22px;
         @include font;
+        display: block;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.658);
+        padding-bottom: 20px;
+        margin-bottom: 40px;
      }
     
     .news{
@@ -36,7 +45,7 @@
             line-height: 40px;
         
         }
-    
+   
     }
     .politicstext{
         padding: 60px;
@@ -136,13 +145,13 @@
 
     .square1{
         background: url(../../img/blog-img/bn-1.jpg)no-repeat center/cover;
-        height:250px;
+        height:220px;
         margin-bottom: 2em;
         
     }
     .square2{
         background: url(../../img/blog-img/bn-2.jpg)no-repeat center/cover;
-        height:250px;
+        height:220px;
 
     }
     .greyrectangle{
@@ -170,4 +179,41 @@
 .littlesquareright{
     display: grid;
     grid-template-columns: 1fr;
+}
+
+form{
+    display: block;
+   
+    input{
+        width: 100%;
+        background-color: #f5f5f5;
+        width: 100%;
+        background-color: #f5f5f5;
+        height: 45px;
+        margin-bottom: 15px;
+        border: none;
+        padding: 0 15px;
+        font-size: 12px;
+      
+    }
+}
+
+
+
+.redbtn{
+    background-color: red;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    @include font;
+    letter-spacing:1px;
+}
+
+.littlesquareright{
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    gap: 2rem;
 }

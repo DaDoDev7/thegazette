@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="return-to-top">
   <body>
   <head>
   <meta charset="UTF-8">
   <title>The Gazette</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.min.css">
   </head>
@@ -23,42 +23,33 @@
       <a href="">darios</a>
     </div>
   </header>
-  <section class="slideshow swiper">
-    <div class="imgslideshowheader slide1 swiper-slide">
-      <div class="textimgslider">
-        <h6>crypto</h6>
-        <h1>A fancy Building</h1>
-        <cite>june 21, 1987</cite>
+  <section class="mySwiper slideshow swiper-container ">
+    <div class="swiper-wrapper">
+      <div class="imgslideshowheader slide1 swiper-slide">
+        <div class="textimgslider">
+          <h6>crypto</h6>
+          <h1>A fancy Building</h1>
+          <cite>june 21, 1987</cite>
+        </div>
       </div>
-    </div> 
-    <div class="imgslideshowheader slide2 swiper-slide">
-      <div class="textimgslider">
-        <h6>live</h6>
-        <h1>Music in the Air</h1>
-        <cite>june 21, 1987</cite>
+      <div class="imgslideshowheader slide2 swiper-slide">
+        <div class="textimgslider">
+          <h6>live</h6>
+          <h1>Music in the Air</h1>
+          <cite>june 21, 1987</cite>
+        </div>
       </div>
-    </div>
-     <div class="imgslideshowheader slide3 swiper-slide">
-      <div class="textimgslider">
-        <h6>beaches</h6>
-        <h1>Mohammed <br> advices</h1>
-        <cite>june 21, 1987</cite>
-      </div>
-    </div>
-    <div class="imgslideshowheader slide3 swiper-slide">
-      <div class="textimgslider">
-        <h6>beaches</h6>
-        <h1>Mohammed <br> advices</h1>
-        <cite>june 21, 1987</cite>
+       <div class="imgslideshowheader slide3 swiper-slide">
+        <div class="textimgslider">
+          <h6>beaches</h6>
+          <h1>Mohammed <br> advices</h1>
+          <cite>june 21, 1987</cite>
+        </div>
       </div>
     </div>
-    <div class="imgslideshowheader slide3 swiper-slide">
-      <div class="textimgslider">
-        <h6>beaches</h6>
-        <h1>Mohammed <br> advices</h1>
-        <cite>june 21, 1987</cite>
-      </div>
-    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
 
 
   </section>
@@ -152,23 +143,23 @@
         <div class="dontmiss">
           <h4> don't miss</h4>
           <div class="littlesquareright">
-            <img src="img/blog-img/11.jpg" alt="">
+            <img src="img/blog-img/dm-1.jpg" alt="">
             <div class="textlittlesquare">
-              <span>EU council reunites</span>
+              <span>EU council reunites</span><br>
                <cite>june 21, 1987</cite>
             </div>
           </div>
           <div class="littlesquareright">
-            <img src="img/blog-img/8.jpg" alt="">
+            <img src="img/blog-img/dm-2.jpg" alt="">
             <div class="textlittlesquare">
-              <span>A new way to travel with Dario</span>
+              <span>A new way to travel with Dario</span><br>
                <cite>june 21, 1987</cite>
             </div>
           </div>
           <div class="littlesquareright">
-            <img src="img/blog-img/24.jpg" alt="">
+            <img src="img/blog-img/dm-3.jpg" alt="">
             <div class="textlittlesquare">
-              <span>Why choose a bank?</span>
+              <span>Why choose a bank?</span><br>
                <cite>june 21, 1987</cite>
             </div>
           </div>
@@ -180,7 +171,7 @@
           </div>
           <h4>subscribe</h4>
           <form action="">
-            <input type="email" name="" id="">
+            <input placeholder="Your Email" type="email" name="" id="">
           </form>
           <div class="redbtn">
             subscribe
@@ -411,12 +402,12 @@
       <p>Copyright ©2023 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> style by DaDoDev7</p>
     </div>
   </footer>
-  <a id="top-button" href="">
+  <a class="top-button hide" id="return-to-top" href="" >
     <div >
       <i class="fa-sharp fa-solid fa-chevron-up"></i>
     </div>
   </a>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/js/swiper.min.js"></script>
   <script src="https://kit.fontawesome.com/d2daa20862.js" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
